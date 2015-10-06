@@ -39,8 +39,8 @@ mkdir $symcache_dir_path
 New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT
 
 #add environment variables for SYMBOL and SymCache
-$env:_NT_SYMBOL_PATH=$symbol_path
-$env:_NT_SYMCACHE_PATH = $symcache_dir_path
+setx /m _NT_SYMBOL_PATH $symbol_path
+setx /m _NT_SYMCACHE_PATH $symcache_dir_path
 
 
 
