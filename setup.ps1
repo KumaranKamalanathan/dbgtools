@@ -20,8 +20,8 @@ if($os_arch.OSArchitecture.Contains("32"))
 }
 
 #Directory Path for Symbols and SymCache, If required change path to desired location 
-$sym_dir_path = $current_dir+"\Sym"
-$symcache_dir_path = $current_dir+"\SymCache"
+$sym_dir_path = $current_dir.Path+"\Sym"
+$symcache_dir_path = $current_dir.Path+"\SymCache"
 
 #windbg.exe relative path for 32 and 64 bit
 $windbg_x86_path = $current_dir.Path + "\x86\windbg.exe"
